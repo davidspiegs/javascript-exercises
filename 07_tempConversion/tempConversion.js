@@ -1,11 +1,13 @@
 const convertToCelsius = function(input) {
-  let newTempC = ((input - 32) / 1.8);
-  return newTempC;
+  const newTempC = ((input - 32) / 1.8);
+  const rounded = Number(newTempC.toFixed(1));
+  return rounded;
 };
 
 const convertToFahrenheit = function(input) {
-  let newTempF = ((input * 1.8) + 32);
-  return newTempF;
+  const newTempF = ((input * 1.8) + 32);
+  const rounded = Number(newTempF.toFixed(1));
+  return rounded;
 };
 
 // Do not edit below this line
